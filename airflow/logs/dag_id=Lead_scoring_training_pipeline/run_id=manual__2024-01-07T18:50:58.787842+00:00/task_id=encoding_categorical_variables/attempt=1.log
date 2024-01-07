@@ -1,0 +1,24 @@
+[2024-01-07 18:51:02,786] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables manual__2024-01-07T18:50:58.787842+00:00 [queued]>
+[2024-01-07 18:51:02,801] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables manual__2024-01-07T18:50:58.787842+00:00 [queued]>
+[2024-01-07 18:51:02,801] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:51:02,801] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 18:51:02,801] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:51:02,827] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): encoding_categorical_variables> on 2024-01-07 18:50:58.787842+00:00
+[2024-01-07 18:51:02,836] {standard_task_runner.py:52} INFO - Started process 7380 to run task
+[2024-01-07 18:51:02,838] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_training_pipeline', 'encoding_categorical_variables', 'manual__2024-01-07T18:50:58.787842+00:00', '--job-id', '39', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_training_pipeline/lead_scoring_training_pipeline.py', '--cfg-path', '/tmp/tmpg7h3jomy', '--error-file', '/tmp/tmp7hyc5pf_']
+[2024-01-07 18:51:02,838] {standard_task_runner.py:80} INFO - Job 39: Subtask encoding_categorical_variables
+[2024-01-07 18:51:02,915] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables manual__2024-01-07T18:50:58.787842+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 18:51:03,013] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_training_pipeline
+AIRFLOW_CTX_TASK_ID=encoding_categorical_variables
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T18:50:58.787842+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-07T18:50:58.787842+00:00
+[2024-01-07 18:51:03,026] {logging_mixin.py:115} INFO - model_input table already populated
+[2024-01-07 18:51:03,026] {python.py:173} INFO - Done. Returned value was: None
+[2024-01-07 18:51:03,040] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=Lead_scoring_training_pipeline, task_id=encoding_categorical_variables, execution_date=20240107T185058, start_date=20240107T185102, end_date=20240107T185103
+[2024-01-07 18:51:03,090] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-01-07 18:51:03,153] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

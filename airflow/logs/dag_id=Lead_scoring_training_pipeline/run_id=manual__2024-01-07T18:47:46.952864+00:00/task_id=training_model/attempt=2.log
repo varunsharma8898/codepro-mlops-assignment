@@ -1,0 +1,35 @@
+[2024-01-07 18:48:11,866] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:47:46.952864+00:00 [queued]>
+[2024-01-07 18:48:11,880] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:47:46.952864+00:00 [queued]>
+[2024-01-07 18:48:11,880] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:48:11,880] {taskinstance.py:1377} INFO - Starting attempt 2 of 2
+[2024-01-07 18:48:11,880] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:48:11,906] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): training_model> on 2024-01-07 18:47:46.952864+00:00
+[2024-01-07 18:48:11,914] {standard_task_runner.py:52} INFO - Started process 7063 to run task
+[2024-01-07 18:48:11,918] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_training_pipeline', 'training_model', 'manual__2024-01-07T18:47:46.952864+00:00', '--job-id', '35', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_training_pipeline/.ipynb_checkpoints/lead_scoring_training_pipeline-checkpoint.py', '--cfg-path', '/tmp/tmpm611dux9', '--error-file', '/tmp/tmpqkl6sf_y']
+[2024-01-07 18:48:11,918] {standard_task_runner.py:80} INFO - Job 35: Subtask training_model
+[2024-01-07 18:48:11,998] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:47:46.952864+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 18:48:12,088] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_training_pipeline
+AIRFLOW_CTX_TASK_ID=training_model
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T18:47:46.952864+00:00
+AIRFLOW_CTX_TRY_NUMBER=2
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-07T18:47:46.952864+00:00
+[2024-01-07 18:48:12,088] {logging_mixin.py:115} INFO - unable to open database file
+[2024-01-07 18:48:12,097] {logging_mixin.py:115} INFO - Loading 'features' table
+[2024-01-07 18:48:15,729] {logging_mixin.py:115} INFO - Loading 'target' table
+[2024-01-07 18:48:15,965] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dags/lead_scoring_training_pipeline/utils.py", line 146, in get_trained_model
+    run_name = EXPERIMENT + "" + date.today().strftime("%d%m_%Y_%H_%M_%S")
+NameError: name 'date' is not defined
+[2024-01-07 18:48:15,979] {taskinstance.py:1415} INFO - Marking task as FAILED. dag_id=Lead_scoring_training_pipeline, task_id=training_model, execution_date=20240107T184746, start_date=20240107T184811, end_date=20240107T184815
+[2024-01-07 18:48:16,007] {standard_task_runner.py:92} ERROR - Failed to execute job 35 for task training_model (name 'date' is not defined; 7063)
+[2024-01-07 18:48:16,025] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-01-07 18:48:16,073] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

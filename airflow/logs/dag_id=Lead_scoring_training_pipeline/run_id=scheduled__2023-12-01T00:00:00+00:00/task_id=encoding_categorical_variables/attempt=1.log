@@ -1,0 +1,32 @@
+[2024-01-07 18:26:33,887] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables scheduled__2023-12-01T00:00:00+00:00 [queued]>
+[2024-01-07 18:26:33,902] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables scheduled__2023-12-01T00:00:00+00:00 [queued]>
+[2024-01-07 18:26:33,902] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:26:33,902] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 18:26:33,902] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:26:33,928] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): encoding_categorical_variables> on 2023-12-01 00:00:00+00:00
+[2024-01-07 18:26:33,937] {standard_task_runner.py:52} INFO - Started process 4796 to run task
+[2024-01-07 18:26:33,939] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_training_pipeline', 'encoding_categorical_variables', 'scheduled__2023-12-01T00:00:00+00:00', '--job-id', '27', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_training_pipeline/lead_scoring_training_pipeline.py', '--cfg-path', '/tmp/tmp93mx_668', '--error-file', '/tmp/tmpuquyhlpd']
+[2024-01-07 18:26:33,939] {standard_task_runner.py:80} INFO - Job 27: Subtask encoding_categorical_variables
+[2024-01-07 18:26:34,022] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables scheduled__2023-12-01T00:00:00+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 18:26:34,117] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_training_pipeline
+AIRFLOW_CTX_TASK_ID=encoding_categorical_variables
+AIRFLOW_CTX_EXECUTION_DATE=2023-12-01T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-12-01T00:00:00+00:00
+[2024-01-07 18:26:34,118] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dags/lead_scoring_training_pipeline/utils.py", line 58, in encode_features
+    cnx = sqlite3.connect(DB_PATH + DB_FILE_NAME)
+sqlite3.OperationalError: unable to open database file
+[2024-01-07 18:26:34,129] {taskinstance.py:1415} INFO - Marking task as UP_FOR_RETRY. dag_id=Lead_scoring_training_pipeline, task_id=encoding_categorical_variables, execution_date=20231201T000000, start_date=20240107T182633, end_date=20240107T182634
+[2024-01-07 18:26:34,153] {standard_task_runner.py:92} ERROR - Failed to execute job 27 for task encoding_categorical_variables (unable to open database file; 4796)
+[2024-01-07 18:26:34,191] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-01-07 18:26:34,245] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

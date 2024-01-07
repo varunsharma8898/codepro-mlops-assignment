@@ -1,0 +1,10 @@
+Commands
+
+To run mlflow server on port: 7007:
+  mlflow server --backend-store-uri='sqlite:////home/dags/Assignment/02_training_pipeline/notebooks/lead_scoring_model_experimentation.db' --default-artifact-root="/home/mlruns/" --port=7007 --host=0.0.0.0
+
+To initialize airflow, create a user and start airflow scheduler and webserver:
+  airflow db init
+  airflow users create --username upgrad --firstname upgrad --lastname upgrad --role Admin --email spiderman@superhero.org --password admin
+  airflow scheduler
+  airflow webserver

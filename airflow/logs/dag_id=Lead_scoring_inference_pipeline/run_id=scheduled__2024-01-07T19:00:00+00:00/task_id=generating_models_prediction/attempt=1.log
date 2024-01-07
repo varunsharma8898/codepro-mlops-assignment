@@ -1,0 +1,30 @@
+[2024-01-07 20:00:07,056] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_inference_pipeline.generating_models_prediction scheduled__2024-01-07T19:00:00+00:00 [queued]>
+[2024-01-07 20:00:07,073] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_inference_pipeline.generating_models_prediction scheduled__2024-01-07T19:00:00+00:00 [queued]>
+[2024-01-07 20:00:07,073] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 20:00:07,073] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 20:00:07,073] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 20:00:07,100] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): generating_models_prediction> on 2024-01-07 19:00:00+00:00
+[2024-01-07 20:00:07,105] {standard_task_runner.py:52} INFO - Started process 14759 to run task
+[2024-01-07 20:00:07,108] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_inference_pipeline', 'generating_models_prediction', 'scheduled__2024-01-07T19:00:00+00:00', '--job-id', '53', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py', '--cfg-path', '/tmp/tmp4z47svrb', '--error-file', '/tmp/tmp0g9ez5wh']
+[2024-01-07 20:00:07,109] {standard_task_runner.py:80} INFO - Job 53: Subtask generating_models_prediction
+[2024-01-07 20:00:07,201] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_inference_pipeline.generating_models_prediction scheduled__2024-01-07T19:00:00+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 20:00:07,401] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_inference_pipeline
+AIRFLOW_CTX_TASK_ID=generating_models_prediction
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T19:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-07T19:00:00+00:00
+[2024-01-07 20:00:07,403] {logging_mixin.py:115} INFO - Model url models:/LightGBM/production
+[2024-01-07 20:00:07,455] {connectionpool.py:780} WARNING - Retrying (Retry(total=4, connect=4, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f48ec18f340>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get-latest-versions
+[2024-01-07 20:00:11,460] {connectionpool.py:780} WARNING - Retrying (Retry(total=3, connect=3, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f48ec182850>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get-latest-versions
+[2024-01-07 20:00:19,470] {connectionpool.py:780} WARNING - Retrying (Retry(total=2, connect=2, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f48ec182fd0>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get-latest-versions
+[2024-01-07 20:00:35,487] {connectionpool.py:780} WARNING - Retrying (Retry(total=1, connect=1, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f48ec157460>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get-latest-versions
+[2024-01-07 20:01:07,522] {connectionpool.py:780} WARNING - Retrying (Retry(total=0, connect=0, read=5, redirect=5, status=5)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f48ec157280>: Failed to establish a new connection: [Errno 111] Connection refused')': /api/2.0/mlflow/registered-models/get-latest-versions
+[2024-01-07 20:01:07,524] {logging_mixin.py:115} INFO - Error while running get_models_prediction : API request to http://0.0.0.0:6007/api/2.0/mlflow/registered-models/get-latest-versions failed with exception HTTPConnectionPool(host='0.0.0.0', port=6007): Max retries exceeded with url: /api/2.0/mlflow/registered-models/get-latest-versions (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f48ec1570a0>: Failed to establish a new connection: [Errno 111] Connection refused'))
+[2024-01-07 20:01:07,526] {python.py:173} INFO - Done. Returned value was: None
+[2024-01-07 20:01:07,552] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=Lead_scoring_inference_pipeline, task_id=generating_models_prediction, execution_date=20240107T190000, start_date=20240107T200007, end_date=20240107T200107
+[2024-01-07 20:01:07,598] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-01-07 20:01:07,765] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

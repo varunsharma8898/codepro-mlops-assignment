@@ -1,0 +1,25 @@
+[2024-01-07 19:51:21,424] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_inference_pipeline.generating_models_prediction scheduled__2024-01-07T18:00:00+00:00 [queued]>
+[2024-01-07 19:51:21,438] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_inference_pipeline.generating_models_prediction scheduled__2024-01-07T18:00:00+00:00 [queued]>
+[2024-01-07 19:51:21,438] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 19:51:21,438] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 19:51:21,439] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 19:51:21,489] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): generating_models_prediction> on 2024-01-07 18:00:00+00:00
+[2024-01-07 19:51:21,494] {standard_task_runner.py:52} INFO - Started process 13526 to run task
+[2024-01-07 19:51:21,497] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_inference_pipeline', 'generating_models_prediction', 'scheduled__2024-01-07T18:00:00+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_inference_pipeline/.ipynb_checkpoints/lead_scoring_inference_pipeline-checkpoint.py', '--cfg-path', '/tmp/tmpd7pqg97r', '--error-file', '/tmp/tmpimllhd4b']
+[2024-01-07 19:51:21,497] {standard_task_runner.py:80} INFO - Job 46: Subtask generating_models_prediction
+[2024-01-07 19:51:21,580] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_inference_pipeline.generating_models_prediction scheduled__2024-01-07T18:00:00+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 19:51:21,775] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_inference_pipeline
+AIRFLOW_CTX_TASK_ID=generating_models_prediction
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T18:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2024-01-07T18:00:00+00:00
+[2024-01-07 19:51:21,777] {logging_mixin.py:115} INFO - Model url models:/LightGBM/production
+[2024-01-07 19:51:21,911] {logging_mixin.py:115} INFO - Error while running get_models_prediction : No versions of model with name 'LightGBM' and stage 'production' found
+[2024-01-07 19:51:21,912] {python.py:173} INFO - Done. Returned value was: None
+[2024-01-07 19:51:21,926] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=Lead_scoring_inference_pipeline, task_id=generating_models_prediction, execution_date=20240107T180000, start_date=20240107T195121, end_date=20240107T195121
+[2024-01-07 19:51:21,990] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-01-07 19:51:22,063] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

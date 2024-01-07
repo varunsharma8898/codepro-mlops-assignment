@@ -1,0 +1,46 @@
+[2024-01-07 18:32:15,508] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables manual__2024-01-07T18:32:11.845395+00:00 [queued]>
+[2024-01-07 18:32:15,524] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables manual__2024-01-07T18:32:11.845395+00:00 [queued]>
+[2024-01-07 18:32:15,524] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:32:15,524] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 18:32:15,524] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:32:15,549] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): encoding_categorical_variables> on 2024-01-07 18:32:11.845395+00:00
+[2024-01-07 18:32:15,557] {standard_task_runner.py:52} INFO - Started process 5372 to run task
+[2024-01-07 18:32:15,560] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_training_pipeline', 'encoding_categorical_variables', 'manual__2024-01-07T18:32:11.845395+00:00', '--job-id', '31', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_training_pipeline/.ipynb_checkpoints/lead_scoring_training_pipeline-checkpoint.py', '--cfg-path', '/tmp/tmp9y4xbf6r', '--error-file', '/tmp/tmpmo6bq_xi']
+[2024-01-07 18:32:15,561] {standard_task_runner.py:80} INFO - Job 31: Subtask encoding_categorical_variables
+[2024-01-07 18:32:15,637] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_training_pipeline.encoding_categorical_variables manual__2024-01-07T18:32:11.845395+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 18:32:15,725] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_training_pipeline
+AIRFLOW_CTX_TASK_ID=encoding_categorical_variables
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T18:32:11.845395+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-07T18:32:11.845395+00:00
+[2024-01-07 18:32:15,734] {logging_mixin.py:115} INFO - Loading model_input table
+[2024-01-07 18:32:15,736] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/sql.py", line 2020, in execute
+    cur.execute(*args, **kwargs)
+sqlite3.OperationalError: no such table: model_input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dags/lead_scoring_training_pipeline/utils.py", line 65, in encode_features
+    df = pd.read_sql("select * from model_input", cnx)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/sql.py", line 566, in read_sql
+    return pandas_sql.read_query(
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/sql.py", line 2080, in read_query
+    cursor = self.execute(*args)
+  File "/opt/conda/lib/python3.8/site-packages/pandas/io/sql.py", line 2032, in execute
+    raise ex from exc
+pandas.io.sql.DatabaseError: Execution failed on sql 'select * from model_input': no such table: model_input
+[2024-01-07 18:32:15,749] {taskinstance.py:1415} INFO - Marking task as UP_FOR_RETRY. dag_id=Lead_scoring_training_pipeline, task_id=encoding_categorical_variables, execution_date=20240107T183211, start_date=20240107T183215, end_date=20240107T183215
+[2024-01-07 18:32:15,774] {standard_task_runner.py:92} ERROR - Failed to execute job 31 for task encoding_categorical_variables (Execution failed on sql 'select * from model_input': no such table: model_input; 5372)
+[2024-01-07 18:32:15,811] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-01-07 18:32:15,867] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

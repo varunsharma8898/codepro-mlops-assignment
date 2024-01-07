@@ -1,0 +1,42 @@
+[2024-01-07 18:51:07,014] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:50:58.787842+00:00 [queued]>
+[2024-01-07 18:51:07,030] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:50:58.787842+00:00 [queued]>
+[2024-01-07 18:51:07,030] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:51:07,030] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 18:51:07,030] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:51:07,056] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): training_model> on 2024-01-07 18:50:58.787842+00:00
+[2024-01-07 18:51:07,064] {standard_task_runner.py:52} INFO - Started process 7398 to run task
+[2024-01-07 18:51:07,067] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_training_pipeline', 'training_model', 'manual__2024-01-07T18:50:58.787842+00:00', '--job-id', '40', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_training_pipeline/lead_scoring_training_pipeline.py', '--cfg-path', '/tmp/tmp2s0w52co', '--error-file', '/tmp/tmpq676g25p']
+[2024-01-07 18:51:07,067] {standard_task_runner.py:80} INFO - Job 40: Subtask training_model
+[2024-01-07 18:51:07,151] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:50:58.787842+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 18:51:07,248] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_training_pipeline
+AIRFLOW_CTX_TASK_ID=training_model
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T18:50:58.787842+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-07T18:50:58.787842+00:00
+[2024-01-07 18:51:07,248] {logging_mixin.py:115} INFO - unable to open database file
+[2024-01-07 18:51:07,258] {logging_mixin.py:115} INFO - Loading 'features' table
+[2024-01-07 18:51:10,798] {logging_mixin.py:115} INFO - Loading 'target' table
+[2024-01-07 18:51:11,035] {utils.py:156} INFO - Creating mlflow experiment
+[2024-01-07 18:51:11,262] {logging_mixin.py:115} WARNING - /opt/conda/lib/python3.8/site-packages/sklearn/utils/validation.py:72 DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+[2024-01-07 18:51:11,352] {logging_mixin.py:115} INFO - [LightGBM] [Warning] bagging_fraction is set=0.1, subsample=0.1 will be ignored. Current value: bagging_fraction=0.1
+[2024-01-07 18:51:11,352] {logging_mixin.py:115} INFO - [LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=0.1 will be ignored. Current value: feature_fraction=1.0
+[2024-01-07 18:51:19,799] {logging_mixin.py:115} WARNING - Successfully registered model 'LightGBM'.
+[2024-01-07 18:51:19,863] {logging_mixin.py:115} WARNING - 2024/01/07 18:51:19 INFO mlflow.tracking._model_registry.client: Waiting up to 300 seconds for model version to finish creation.                     Model name: LightGBM, version 1
+[2024-01-07 18:51:19,863] {logging_mixin.py:115} WARNING - Created version '1' of model 'LightGBM'.
+[2024-01-07 18:51:20,072] {taskinstance.py:1909} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/opt/conda/lib/python3.8/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/home/dags/lead_scoring_training_pipeline/utils.py", line 177, in get_trained_model
+    precision = precision_score(y_pred, y_test, average="macro")
+NameError: name 'precision_score' is not defined
+[2024-01-07 18:51:20,086] {taskinstance.py:1415} INFO - Marking task as UP_FOR_RETRY. dag_id=Lead_scoring_training_pipeline, task_id=training_model, execution_date=20240107T185058, start_date=20240107T185107, end_date=20240107T185120
+[2024-01-07 18:51:20,112] {standard_task_runner.py:92} ERROR - Failed to execute job 40 for task training_model (name 'precision_score' is not defined; 7398)
+[2024-01-07 18:51:20,163] {local_task_job.py:156} INFO - Task exited with return code 1
+[2024-01-07 18:51:20,193] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

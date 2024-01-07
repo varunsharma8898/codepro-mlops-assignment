@@ -1,0 +1,89 @@
+[2024-01-07 18:23:41,793] {processor.py:153} INFO - Started process (PID=4330) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:23:41,794] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:23:41,794] {logging_mixin.py:115} INFO - [2024-01-07 18:23:41,794] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:23:41,798] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:23:41,937] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.147 seconds
+[2024-01-07 18:24:28,519] {processor.py:153} INFO - Started process (PID=4595) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:24:28,520] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:24:28,520] {logging_mixin.py:115} INFO - [2024-01-07 18:24:28,520] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:24:28,522] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:24:28,655] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.138 seconds
+[2024-01-07 18:25:05,267] {processor.py:153} INFO - Started process (PID=4647) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:25:05,268] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:25:05,268] {logging_mixin.py:115} INFO - [2024-01-07 18:25:05,268] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:25:05,270] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:25:05,413] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.148 seconds
+[2024-01-07 18:25:42,365] {processor.py:153} INFO - Started process (PID=4704) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:25:42,365] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:25:42,365] {logging_mixin.py:115} INFO - [2024-01-07 18:25:42,365] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:25:42,367] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:25:42,500] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.138 seconds
+[2024-01-07 18:26:26,370] {processor.py:153} INFO - Started process (PID=4760) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:26:26,371] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:26:26,371] {logging_mixin.py:115} INFO - [2024-01-07 18:26:26,371] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:26:26,373] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:26:26,508] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.140 seconds
+[2024-01-07 18:27:01,587] {processor.py:153} INFO - Started process (PID=4869) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:27:01,588] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:27:01,588] {logging_mixin.py:115} INFO - [2024-01-07 18:27:01,588] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:27:01,591] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:27:01,721] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.136 seconds
+[2024-01-07 18:27:48,563] {processor.py:153} INFO - Started process (PID=4931) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:27:48,563] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:27:48,563] {logging_mixin.py:115} INFO - [2024-01-07 18:27:48,563] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:27:48,565] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:27:48,692] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.132 seconds
+[2024-01-07 18:28:24,236] {processor.py:153} INFO - Started process (PID=4985) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:28:24,236] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:28:24,237] {logging_mixin.py:115} INFO - [2024-01-07 18:28:24,237] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:28:24,238] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:28:24,369] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.136 seconds
+[2024-01-07 18:29:00,531] {processor.py:153} INFO - Started process (PID=5044) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:29:00,532] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:29:00,532] {logging_mixin.py:115} INFO - [2024-01-07 18:29:00,532] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:29:00,534] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:29:00,558] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.030 seconds
+[2024-01-07 18:29:35,907] {processor.py:153} INFO - Started process (PID=5105) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:29:35,908] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:29:35,908] {logging_mixin.py:115} INFO - [2024-01-07 18:29:35,908] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:29:35,910] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:29:35,932] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.028 seconds
+[2024-01-07 18:30:14,222] {processor.py:153} INFO - Started process (PID=5168) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:30:14,222] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:30:14,223] {logging_mixin.py:115} INFO - [2024-01-07 18:30:14,222] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:30:14,224] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:30:14,247] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.029 seconds
+[2024-01-07 18:30:49,143] {processor.py:153} INFO - Started process (PID=5224) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:30:49,144] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:30:49,144] {logging_mixin.py:115} INFO - [2024-01-07 18:30:49,144] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:30:49,155] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:30:49,178] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.037 seconds
+[2024-01-07 18:31:19,899] {processor.py:153} INFO - Started process (PID=5282) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:19,899] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:31:19,900] {logging_mixin.py:115} INFO - [2024-01-07 18:31:19,900] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:19,901] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:19,926] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.030 seconds
+[2024-01-07 18:31:36,875] {processor.py:153} INFO - Started process (PID=5296) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:36,875] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:31:36,876] {logging_mixin.py:115} INFO - [2024-01-07 18:31:36,876] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:36,876] {logging_mixin.py:115} INFO - [2024-01-07 18:31:36,876] {dagbag.py:301} INFO - File /home/dags/lead_scoring_training_pipeline/constants.py assumed to contain no DAGs. Skipping.
+[2024-01-07 18:31:36,876] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:36,898] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.026 seconds
+[2024-01-07 18:31:54,211] {processor.py:153} INFO - Started process (PID=5325) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:54,211] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:31:54,212] {logging_mixin.py:115} INFO - [2024-01-07 18:31:54,212] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:54,212] {logging_mixin.py:115} INFO - [2024-01-07 18:31:54,212] {dagbag.py:301} INFO - File /home/dags/lead_scoring_training_pipeline/constants.py assumed to contain no DAGs. Skipping.
+[2024-01-07 18:31:54,212] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:31:54,236] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.028 seconds
+[2024-01-07 18:32:47,190] {processor.py:153} INFO - Started process (PID=5427) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:32:47,191] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:32:47,191] {logging_mixin.py:115} INFO - [2024-01-07 18:32:47,191] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:32:47,192] {logging_mixin.py:115} INFO - [2024-01-07 18:32:47,192] {dagbag.py:301} INFO - File /home/dags/lead_scoring_training_pipeline/constants.py assumed to contain no DAGs. Skipping.
+[2024-01-07 18:32:47,192] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:32:47,214] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.027 seconds
+[2024-01-07 18:33:29,102] {processor.py:153} INFO - Started process (PID=5492) to work on /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:33:29,103] {processor.py:641} INFO - Processing file /home/dags/lead_scoring_training_pipeline/constants.py for tasks to queue
+[2024-01-07 18:33:29,103] {logging_mixin.py:115} INFO - [2024-01-07 18:33:29,103] {dagbag.py:508} INFO - Filling up the DagBag from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:33:29,104] {logging_mixin.py:115} INFO - [2024-01-07 18:33:29,104] {dagbag.py:301} INFO - File /home/dags/lead_scoring_training_pipeline/constants.py assumed to contain no DAGs. Skipping.
+[2024-01-07 18:33:29,104] {processor.py:653} WARNING - No viable dags retrieved from /home/dags/lead_scoring_training_pipeline/constants.py
+[2024-01-07 18:33:29,123] {processor.py:161} INFO - Processing /home/dags/lead_scoring_training_pipeline/constants.py took 0.024 seconds

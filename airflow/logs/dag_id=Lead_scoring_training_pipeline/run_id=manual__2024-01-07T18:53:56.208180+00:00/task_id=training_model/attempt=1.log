@@ -1,0 +1,37 @@
+[2024-01-07 18:54:04,559] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:53:56.208180+00:00 [queued]>
+[2024-01-07 18:54:04,577] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:53:56.208180+00:00 [queued]>
+[2024-01-07 18:54:04,577] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:54:04,577] {taskinstance.py:1377} INFO - Starting attempt 1 of 2
+[2024-01-07 18:54:04,577] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2024-01-07 18:54:04,605] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): training_model> on 2024-01-07 18:53:56.208180+00:00
+[2024-01-07 18:54:04,613] {standard_task_runner.py:52} INFO - Started process 7755 to run task
+[2024-01-07 18:54:04,617] {standard_task_runner.py:79} INFO - Running: ['airflow', 'tasks', 'run', 'Lead_scoring_training_pipeline', 'training_model', 'manual__2024-01-07T18:53:56.208180+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/lead_scoring_training_pipeline/.ipynb_checkpoints/lead_scoring_training_pipeline-checkpoint.py', '--cfg-path', '/tmp/tmpnfe8jljo', '--error-file', '/tmp/tmpy2e1c1cp']
+[2024-01-07 18:54:04,617] {standard_task_runner.py:80} INFO - Job 43: Subtask training_model
+[2024-01-07 18:54:04,692] {task_command.py:371} INFO - Running <TaskInstance: Lead_scoring_training_pipeline.training_model manual__2024-01-07T18:53:56.208180+00:00 [running]> on host a3830b6d5f93
+[2024-01-07 18:54:04,786] {taskinstance.py:1589} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=Lead_scoring_training_pipeline
+AIRFLOW_CTX_TASK_ID=training_model
+AIRFLOW_CTX_EXECUTION_DATE=2024-01-07T18:53:56.208180+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2024-01-07T18:53:56.208180+00:00
+[2024-01-07 18:54:04,787] {logging_mixin.py:115} INFO - unable to open database file
+[2024-01-07 18:54:04,796] {logging_mixin.py:115} INFO - Loading 'features' table
+[2024-01-07 18:54:08,375] {logging_mixin.py:115} INFO - Loading 'target' table
+[2024-01-07 18:54:08,614] {utils.py:159} INFO - Creating mlflow experiment
+[2024-01-07 18:54:08,822] {logging_mixin.py:115} WARNING - /opt/conda/lib/python3.8/site-packages/sklearn/utils/validation.py:72 DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+[2024-01-07 18:54:08,908] {logging_mixin.py:115} INFO - [LightGBM] [Warning] bagging_fraction is set=0.1, subsample=0.1 will be ignored. Current value: bagging_fraction=0.1
+[2024-01-07 18:54:08,908] {logging_mixin.py:115} INFO - [LightGBM] [Warning] feature_fraction is set=1.0, colsample_bytree=0.1 will be ignored. Current value: feature_fraction=1.0
+[2024-01-07 18:54:17,302] {logging_mixin.py:115} WARNING - Registered model 'LightGBM' already exists. Creating a new version of this model...
+[2024-01-07 18:54:17,362] {logging_mixin.py:115} WARNING - 2024/01/07 18:54:17 INFO mlflow.tracking._model_registry.client: Waiting up to 300 seconds for model version to finish creation.                     Model name: LightGBM, version 3
+[2024-01-07 18:54:17,362] {logging_mixin.py:115} WARNING - Created version '3' of model 'LightGBM'.
+[2024-01-07 18:54:17,629] {logging_mixin.py:115} INFO - Precision= 0.7409460378017345
+[2024-01-07 18:54:17,629] {logging_mixin.py:115} INFO - Recall= 0.7490820154492259
+[2024-01-07 18:54:17,629] {logging_mixin.py:115} INFO - AUC= 0.7490820154492259
+[2024-01-07 18:54:17,923] {logging_mixin.py:115} INFO - Inside MLflow Run with id 947f5b940e7b4241853547b2efbc8e8a
+[2024-01-07 18:54:17,969] {python.py:173} INFO - Done. Returned value was: None
+[2024-01-07 18:54:17,998] {taskinstance.py:1415} INFO - Marking task as SUCCESS. dag_id=Lead_scoring_training_pipeline, task_id=training_model, execution_date=20240107T185356, start_date=20240107T185404, end_date=20240107T185417
+[2024-01-07 18:54:18,074] {local_task_job.py:156} INFO - Task exited with return code 0
+[2024-01-07 18:54:18,101] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
