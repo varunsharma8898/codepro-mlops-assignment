@@ -1,4 +1,4 @@
-# codeprod-mlops-assignment
+# codepro-mlops-assignment
 
 > This project implements an end-to-end pipeline for CodePro Company to reduce the L2AC (Leads to Application Completion) to maximize profitability. We have implemented both Dev and Prod pipelines using Airflow and MLflow respectively. Experimentation has been doen using pycaret and mlflow. The project is deployed using airflow.
 
